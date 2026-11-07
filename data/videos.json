@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Honda CR-V",
+    "subtitle": "Visual storytelling - Full production",
+    "poster": "/assets/video-05f8.jpg",
+    "video_url": "/assets/video-05f8.mp4",
+    "published": true
+  },
+  {
+    "title": "Honda BR-V - Trắng",
+    "subtitle": "Phiên bản trắng - Full production",
+    "poster": "/assets/video-fb51.jpg",
+    "video_url": "/assets/video-fb51.mp4",
+    "published": true
+  },
+  {
+    "title": "Honda BR-V - Tối màu",
+    "subtitle": "Phiên bản tối - Full production",
+    "poster": "/assets/video-1687.jpg",
+    "video_url": "/assets/video-1687.mp4",
+    "published": true
+  }
+]

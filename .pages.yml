@@ -1,0 +1,217 @@
+media:
+- name: images
+  label: Ảnh
+  input: assets
+  output: /assets
+  rename: safe
+  categories:
+  - image
+- name: videos
+  label: Video MP4
+  input: assets
+  output: /assets
+  rename: safe
+  extensions:
+  - mp4
+  - webm
+content:
+- name: site
+  label: 01 - Giới thiệu, thành tích & liên hệ
+  type: file
+  path: data/site.json
+  format: json
+  fields:
+  - name: brand
+    label: Tên thương hiệu
+    type: string
+  - name: tagline
+    label: Dòng mô tả ngắn
+    type: string
+  - name: headline1
+    label: Tiêu đề dòng 1
+    type: string
+  - name: headline2
+    label: Tiêu đề dòng 2
+    type: string
+  - name: headline3
+    label: Tiêu đề dòng 3
+    type: string
+  - name: intro
+    label: Giới thiệu ở đầu trang
+    type: text
+  - name: hero_image
+    label: Ảnh đầu trang
+    type: image
+    options:
+      media: images
+  - name: stats_heading
+    label: Tiêu đề phần thành tích
+    type: string
+  - name: stats
+    label: Các chỉ số thành tích
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{value} - {label}'
+    fields:
+    - name: value
+      label: Con số
+      type: string
+    - name: label
+      label: Nhãn hiển thị
+      type: string
+  - name: stats_note
+    label: Dòng mô tả thành tích
+    type: text
+  - name: stats_source
+    label: Ghi chú nguồn số liệu
+    type: text
+  - name: about_heading
+    label: Tiêu đề về tôi
+    type: string
+  - name: about_paragraph1
+    label: Đoạn giới thiệu 1
+    type: text
+  - name: about_paragraph2
+    label: Đoạn giới thiệu 2
+    type: text
+  - name: about_image
+    label: Ảnh phần Về tôi
+    type: image
+    options:
+      media: images
+  - name: story_image
+    label: Ảnh phần Kinh nghiệm
+    type: image
+    options:
+      media: images
+  - name: skills
+    label: Các nhóm kỹ năng
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{title}'
+    fields:
+    - name: title
+      label: Tên chuyên môn
+      type: string
+    - name: description
+      label: Mô tả
+      type: text
+  - name: experience
+    label: Các mốc kinh nghiệm
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{title}'
+    fields:
+    - name: period
+      label: Thời gian
+      type: string
+    - name: title
+      label: Công việc / Đơn vị
+      type: string
+    - name: description
+      label: Mô tả
+      type: text
+  - name: contact_heading
+    label: Lời mời liên hệ
+    type: string
+  - name: contact_description
+    label: Mô tả phần liên hệ
+    type: text
+  - name: email
+    label: Email
+    type: string
+  - name: phone
+    label: Số điện thoại
+    type: string
+  - name: location
+    label: Khu vực làm việc
+    type: string
+  - name: linkedin
+    label: Đường dẫn LinkedIn
+    type: string
+- name: projects
+  label: 02 - Quản lý dự án
+  type: file
+  path: data/projects.json
+  format: json
+  list: true
+  fields:
+  - name: title
+    label: Tên dự án
+    type: string
+    required: true
+  - name: category
+    label: Nhóm dự án
+    type: select
+    options:
+      values:
+      - label: SEO
+        name: seo
+      - label: Social & Video
+        name: social
+      - label: AI Creative
+        name: ai
+  - name: tag
+    label: Nhãn ngành / Loại dự án
+    type: string
+  - name: description
+    label: Mô tả và kết quả
+    type: text
+  - name: image
+    label: Ảnh đại diện dự án
+    type: image
+    options:
+      media: images
+  - name: link
+    label: Liên kết dự án
+    type: string
+  - name: link_label
+    label: Chữ trên nút
+    type: string
+  - name: published
+    label: Hiển thị trên website
+    type: boolean
+- name: videos
+  label: 03 - Quản lý video
+  type: file
+  path: data/videos.json
+  format: json
+  list: true
+  fields:
+  - name: title
+    label: Tên video
+    type: string
+    required: true
+  - name: subtitle
+    label: Mô tả ngắn
+    type: string
+  - name: poster
+    label: Ảnh thumbnail
+    type: image
+    options:
+      media: images
+  - name: video_url
+    label: Link video YouTube / MP4 công khai
+    type: string
+    description: Dán đường dẫn YouTube / Shorts hoặc MP4 công khai, hoặc tải MP4 ở ô phía dưới.
+  - name: video_file
+    label: Hoặc tải video MP4 mới
+    type: file
+    description: Chọn file nhỏ, ưu tiên dưới 25 MB. Với video lớn, sử dụng link YouTube ở trên.
+    options:
+      media: videos
+      extensions:
+      - mp4
+      - webm
+  - name: published
+    label: Hiển thị trên website
+    type: boolean
+settings:
+  content:
+    merge: true
