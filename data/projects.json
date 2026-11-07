@@ -38,5 +38,12 @@
     "link": "#contact",
     "link_label": "Liên hệ trao đổi",
     "published": true
+  },
+  {
+    "title": "Tối ưu Content cho AI Search & AI Overview.",
+    "category": "ai",
+    "tag": "AI Search & AI Overview.",
+    "description": "Nghiên cứu Search Intent, tối ưu cấu trúc thông tin và semantic content để nội dung dễ được công cụ tìm kiếm hiểu, tổng hợp và đáp ứng đúng nhu cầu người dùng.",
+    "published": false
   }
 ]
