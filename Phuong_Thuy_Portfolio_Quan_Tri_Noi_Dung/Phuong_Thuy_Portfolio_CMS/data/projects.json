@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Hệ thống nội dung SEO ngành ô tô",
+    "category": "seo",
+    "tag": "SEO / Automotive",
+    "description": "Theo CV: 700K organic traffic tại Honda Ô tô Mỹ Đình; 269K organic traffic và 388 từ khóa Top 3 tại Honda Ô tô Phúc Thọ. Đây là kết quả dự án, không mặc định là thành tích cá nhân độc lập.",
+    "image": "/assets/profile.webp",
+    "link": "https://hondaotomydinh.vn/",
+    "link_label": "Xem website",
+    "published": true
+  },
+  {
+    "title": "Sakura Montessori - Search Intent & AIO",
+    "category": "seo",
+    "tag": "SEO / Education / AI Overview",
+    "description": "Nghiên cứu truy vấn, xây dựng cấu trúc và đối chiếu nội dung với AI Overview. Tài liệu minh họa mức độ bám sát chủ đề, không khẳng định đã được Google trích dẫn.",
+    "image": "/assets/writing.webp",
+    "link": "https://sakuramontessori.edu.vn/tam-ly-tre-1-tuoi/",
+    "link_label": "Xem bài viết",
+    "published": true
+  },
+  {
+    "title": "Video Content - Honda",
+    "category": "social",
+    "tag": "Social / Video",
+    "description": "Toàn bộ quy trình: lên ý tưởng, viết kịch bản, sáng tạo hình ảnh và dựng video truyền thông ngắn. Ba video thực tế có thể xem trực tiếp ở phần dưới.",
+    "image": "/assets/video-05f8.jpg",
+    "link": "#videos",
+    "link_label": "Xem video",
+    "published": true
+  },
+  {
+    "title": "Thiết kế hình ảnh & AI Creative",
+    "category": "ai",
+    "tag": "Creative / AI",
+    "description": "Thiết kế hình ảnh truyền thông, phát triển concept và sử dụng công cụ AI hỗ trợ sáng tạo. Sẽ bổ sung bộ sản phẩm thiết kế cụ thể khi có file mẫu.",
+    "image": "/assets/creative.webp",
+    "link": "#contact",
+    "link_label": "Liên hệ trao đổi",
+    "published": true
+  }
+]

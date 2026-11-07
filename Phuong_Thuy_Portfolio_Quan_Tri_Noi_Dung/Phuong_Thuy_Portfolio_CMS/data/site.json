@@ -1,0 +1,81 @@
+{
+  "brand": "PHUONG THUY.",
+  "headline1": "Ý tưởng tốt.",
+  "headline2": "Nội dung đúng.",
+  "headline3": "Giá trị thật.",
+  "tagline": "Content Marketing & Creative Portfolio",
+  "intro": "Xin chào, mình là Đinh Thị Phương Thùy - làm Content Marketing với nền tảng SEO, đồng thời sáng tạo nội dung Social, sản xuất video và thiết kế hình ảnh bằng AI.",
+  "hero_image": "/assets/hero.webp",
+  "stats_heading": "Năng lực được chứng minh qua những kết quả thực tế",
+  "stats": [
+    {
+      "value": "1.000+",
+      "label": "Sản phẩm nội dung đã thực hiện"
+    },
+    {
+      "value": "900K+",
+      "label": "Lượt truy cập tự nhiên từ các dự án SEO"
+    },
+    {
+      "value": "1.700+",
+      "label": "Khách hàng tiềm năng từ tìm kiếm tự nhiên"
+    },
+    {
+      "value": "4",
+      "label": "Nhóm năng lực nội dung & sáng tạo"
+    }
+  ],
+  "stats_note": "Từ chiến lược đến thực thi, mình tập trung vào nội dung có giá trị và những kết quả có thể đo lường.",
+  "stats_source": "Số liệu tổng hợp từ các dự án ghi trong hồ sơ; thể hiện kết quả dự án, không mặc định là thành tích cá nhân độc lập. Chỉ số traffic tối thiểu tính từ hai dự án 700K và 269K.",
+  "about_heading": "Không chỉ viết content. Mình xây dựng cách nội dung tạo giá trị.",
+  "about_paragraph1": "Mình theo đuổi cách làm nội dung dựa trên việc hiểu người đọc, nghiên cứu nhu cầu tìm kiếm và tổ chức thông tin rõ ràng. Với mỗi dự án, mình quan tâm cả trải nghiệm của người xem lẫn mục tiêu truyền thông của thương hiệu.",
+  "about_paragraph2": "Bên cạnh SEO Content, mình trực tiếp lên ý tưởng, viết kịch bản, tạo visual và dựng các video ngắn phục vụ truyền thông trên nền tảng số.",
+  "about_image": "/assets/writing.webp",
+  "story_image": "/assets/coffee.webp",
+  "skills": [
+    {
+      "title": "SEO Content",
+      "description": "Research, search intent, outline, viết bài chuẩn SEO, tối ưu on-page và nội dung theo cụm chủ đề."
+    },
+    {
+      "title": "Social Media",
+      "description": "Lên kế hoạch truyền thông, viết nội dung Fanpage và xây dựng bài đăng theo mục tiêu chiến dịch."
+    },
+    {
+      "title": "Video Production",
+      "description": "Ý tưởng, kịch bản, hình ảnh, dựng video, hậu kỳ và tối ưu định dạng ngắn."
+    },
+    {
+      "title": "AI Visual Design",
+      "description": "Ứng dụng AI trong phát triển ý tưởng, thiết kế hình ảnh và sáng tạo visual truyền thông."
+    }
+  ],
+  "experience": [
+    {
+      "period": "12/2024 - nay (theo CV)",
+      "title": "Content SEO - T&C / D&C / T&H",
+      "description": "Triển khai nội dung SEO, cập nhật và theo dõi bài viết; quản lý lead và phối hợp với bộ phận bán hàng."
+    },
+    {
+      "period": "03/2024 - 09/2024",
+      "title": "SEO - May Ong Vàng",
+      "description": "Nội dung on-page, off-page, social entity và tối ưu Google Business Profile."
+    },
+    {
+      "period": "05/2023 - 05/2024",
+      "title": "Freelance - Dịch thuật & SEO",
+      "description": "Biên dịch và biên tập nội dung giáo dục, nuôi dạy trẻ cho Concuatui.com."
+    },
+    {
+      "period": "2020 - 2024 / 2025 - nay",
+      "title": "Học vấn",
+      "description": "Ngôn ngữ học - ĐH KHXH&NV Hà Nội; Ngôn ngữ Anh - Đại học Hà Nội (theo CV)."
+    }
+  ],
+  "contact_heading": "Có một dự án thú vị? Mình rất muốn lắng nghe.",
+  "contact_description": "Sẵn sàng trao đổi cơ hội Freelancer, vị trí Content Marketing hoặc dự án SEO, Social Media, Video và AI Creative.",
+  "email": "dinhphuongthuy.dpt02@gmail.com",
+  "phone": "0342026383",
+  "location": "Hà Nội, Việt Nam",
+  "linkedin": "https://www.linkedin.com/in/dinh-thi-phuong-thuy-46a8802b0/"
+}

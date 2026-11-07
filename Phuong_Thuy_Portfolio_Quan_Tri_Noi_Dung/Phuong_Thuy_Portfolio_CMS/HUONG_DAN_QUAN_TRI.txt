@@ -1,0 +1,53 @@
+HƯỚNG DẪN QUẢN TRỊ PORTFOLIO - ĐINH THỊ PHƯƠNG THÙY
+
+GIẢI PHÁP: Pages CMS (trình quản trị nội dung) + GitHub (lưu dữ liệu) + Netlify (xuất bản website).
+Trang quản trị: https://app.pagescms.org/
+
+I. KẾT NỐI LẦN ĐẦU (CHỈ CẦN LÀM 1 LẦN)
+1. Đăng ký / đăng nhập GitHub tại https://github.com/.
+2. Tạo repository mới, ví dụ "phuong-thuy-portfolio". Có thể chọn Private nếu Pages CMS và Netlify có quyền truy cập.
+3. Đưa TOÀN BỘ FILE BÊN TRONG thư mục Phuong_Thuy_Portfolio_CMS lên NHÁNH main của repository. Rất quan trọng: file .pages.yml phải nằm tại thư mục gốc, cùng cấp với index.html và thư mục data.
+   - Nếu upload bằng giao diện GitHub, Windows có thể ẩn các file bắt đầu bằng dấu chấm; hãy bật chế độ xem file ẩn để không bỏ sót .pages.yml.
+   - GitHub có giới hạn dung lượng mỗi file; video dung lượng lớn nên dùng YouTube dạng Unlisted.
+4. Truy cập https://app.pagescms.org/, đăng nhập với GitHub và cấp quyền truy cập đúng repository vừa tạo.
+5. Chọn repository đó trong Pages CMS. Bạn sẽ thấy 3 mục quản lý:
+   01 - Giới thiệu, thành tích & liên hệ
+   02 - Quản lý dự án
+   03 - Quản lý video
+6. Trên Netlify https://app.netlify.com/, nếu đã có site được triển khai bằng kéo thả: mở site hiện tại > Project configuration > Developer settings > Continuous deployment > Repository > Link repository (tên mục có thể thay đổi theo Netlify). Chọn repository GitHub ở bước 2, nhánh main.
+   Cách khác: tạo một site Netlify mới bằng cách Import from Git, chọn repo và để Publish directory là ".", không cần Build command. Cách này tạo URL Netlify mới, không tự giữ URL site cũ.
+7. Netlify sẽ tự cập nhật website khi dữ liệu được Pages CMS lưu vào GitHub. Thông thường chờ deploy thành công và tải lại trang.
+
+II. SỬA NỘI DUNG
+1. Vào https://app.pagescms.org/ > chọn repository.
+2. Chọn 01 để sửa: tiêu đề, ảnh giới thiệu, các con số thành tích, About Me, nhóm kỹ năng, kinh nghiệm, email, LinkedIn.
+3. Chọn 02 để thêm/xóa/sửa dự án, thay ảnh dự án, link, mô tả, chọn SEO / Social & Video / AI Creative, bật tắt Hiển thị.
+4. Chọn 03 để thêm/xóa/sửa video: tiêu đề, thumbnail, mô tả, liên kết YouTube hoặc upload MP4. Khi nhập cả link và file, file được ưu tiên. Có thể bật tắt Hiển thị.
+5. Nhấn Save trong CMS. Pages CMS tạo commit trong repository; Netlify sẽ deploy lại tự động.
+
+III. VIDEO
+- Nếu video dài / nhiều / nặng, tải lên YouTube ở chế độ Unlisted, dán link vào "Link video YouTube / MP4 công khai". Người xem vẫn phát video ngay trên Portfolio.
+- Có thể chọn MP4 tại "Hoặc tải video MP4 mới"; MP4 cần tương thích trình duyệt (ưu tiên H.264 video + AAC audio).
+- 3 video Honda ban đầu đã được bao gồm dưới dạng MP4 tương thích web.
+- Không dán đường dẫn file nằm trên máy như C:\Users\...; link đó không hoạt động với người truy cập.
+
+IV. ẢNH
+- Tại mục ảnh, chọn ảnh đã có hoặc upload ảnh mới. CMS sẽ lưu ảnh vào thư mục assets trong GitHub.
+- Nên sử dụng WebP hoặc JPEG chất lượng tốt nhưng tối ưu dung lượng; ảnh quá nặng sẽ làm trang tải chậm.
+
+V. CHÚ Ý QUAN TRỌNG
+- Chỉ sửa qua Pages CMS sau khi kết nối GitHub + Netlify hoàn tất. Nếu chỉ kéo ZIP lên Netlify, chỉnh sửa trong Pages CMS KHÔNG tự cập nhật được site đó.
+- Bộ tải về này CHƯA tự đăng nhập hoặc kết nối với tài khoản GitHub / Netlify của bạn. Các bước cấp quyền phải do chủ tài khoản thực hiện.
+- Không cần viết HTML khi sửa các trường đã được khai báo; nếu muốn thay cấu trúc trang hoàn toàn vẫn cần chỉnh mã.
+- Chỉnh sửa xong, nếu nội dung chưa cập nhật, xem trạng thái deploy tại Netlify > Deploys.
+- Không công bố dữ liệu nhạy cảm hoặc số liệu chưa kiểm chứng.
+
+CẤU TRÚC
+index.html         Giao diện gốc
+cms-render.js      Đọc dữ liệu và hiển thị vào website
+data/site.json     Nội dung giới thiệu / thành tích / liên hệ
+data/projects.json Danh sách dự án
+data/videos.json   Danh sách video
+assets/            Ảnh và video
+.pages.yml         Cấu hình giao diện quản trị Pages CMS
+netlify.toml       Cấu hình xuất bản Netlify
